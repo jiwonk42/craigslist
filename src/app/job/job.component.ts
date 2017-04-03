@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { Job } from './app/job.model';
+import { Job } from '../job.model';
 
 @Component({
   selector: 'app-job',
