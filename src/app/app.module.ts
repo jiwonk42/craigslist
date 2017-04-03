@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { JobListComponent } from './job-list/job-list.component';
+import { JobComponent } from './job/job.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    JobListComponent
+    JobListComponent,
+    JobComponent
   ],
   imports: [
     BrowserModule,

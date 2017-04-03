@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Job } from './job.model';
 
 @Component({
   selector: 'app-job-list',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class JobListComponent {
 
-
+  @Input() childJobList: Job[];
 }

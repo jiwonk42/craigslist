@@ -1,7 +1,7 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { JobListComponent } from './job-list/job-list.component';
+import { JobComponent } from './job/job.component';
 
 const appRoutes: Routes = [
   {
@@ -9,8 +9,8 @@ const appRoutes: Routes = [
     component: WelcomeComponent
   },
   {
-    path: 'job-list',
-    component: JobListComponent
+    path: 'job',
+    component: JobComponent
   }
 ];
 
