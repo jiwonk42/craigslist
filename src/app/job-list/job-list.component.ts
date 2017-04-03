@@ -9,4 +9,14 @@ import { Job } from '../job.model';
 export class JobListComponent {
 
   @Input() childJobList: Job[];
+
+  showJobDetails = null;
+
+  showJob(clickedJob) {
+    this.showJobDetails = clickedJob;
+  }
+
+  hideJob() {
+    this.showJobDetails = null;
+  }
 }
