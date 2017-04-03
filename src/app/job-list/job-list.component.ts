@@ -1,36 +1,22 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Job } from '../job.model';
 import { Router } from '@angular/router';
+import { JobService } from '../job.service';
 
 @Component({
   selector: 'app-job-list',
   templateUrl: './job-list.component.html',
-  styleUrls: ['./job-list.component.css']
+  styleUrls: ['./job-list.component.css'],
+  providers: [JobService]
 })
-export class JobListComponent {
-
-  constructor(private router: Router){}
+export class JobListComponent implements OnInit {
 
   @Input() childJobList: Job[];
   @Output() clickSender = new EventEmitter();
-
-  showJobDetails = null;
-
-  showJob(clickedJob) {
-    this.showJobDetails = clickedJob;
-  }
-
-  hideJob() {
-    this.showJobDetails = null;
-  }
 
   editJob(jobToEdit: Job) {
     this.clickSender.emit(jobToEdit);
   }
 
-
-  goToDetailPage(clickedJob: Job) {
-    this.router.navigate(['jobs', clickedJob.id]);
-  };
 
 }

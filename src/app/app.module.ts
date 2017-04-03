@@ -8,8 +8,6 @@ import { routing } from './app.routing';
 import { JobListComponent } from './job-list/job-list.component';
 import { JobComponent } from './job/job.component';
 import { EditJobComponent } from './edit-job/edit-job.component';
-// import { NewJobComponent } from './new-job/new-job.component';
-import { JobDetailComponent } from './job-detail/job-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +16,6 @@ import { JobDetailComponent } from './job-detail/job-detail.component';
     JobListComponent,
     JobComponent,
     EditJobComponent,
-    JobDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -8,10 +8,10 @@ import { Job } from '../job.model';
 })
 export class JobComponent {
 
-  // masterJobList: Job[]= [
-  //   new Job('Barista', 'Victrola Coffee', 'Capital Hill', 'Make good drinks', 1),
-  //   new Job('Insurance Account Assitant', 'Wells Fargo', 'Downtown Seattle', 'Authorize insurance', 2)
-  // ];
+  masterJobList: Job[]= [
+    new Job('Barista', 'Victrola Coffee', 'Capital Hill', 'Make good drinks', 1),
+    new Job('Insurance Account Assitant', 'Wells Fargo', 'Downtown Seattle', 'Authorize insurance', 2)
+  ];
 
   selectedJob = null;
 
