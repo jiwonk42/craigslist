@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Job } from '../job.model';
 
 @Component({
@@ -9,6 +9,7 @@ import { Job } from '../job.model';
 export class JobListComponent {
 
   @Input() childJobList: Job[];
+  @Output() clickSender = new EventEmitter();
 
   showJobDetails = null;
 
@@ -18,5 +19,9 @@ export class JobListComponent {
 
   hideJob() {
     this.showJobDetails = null;
+  }
+
+  editJob(jobToEdit: Job) {
+    this.clickSender.emit(jobToEdit);
   }
 }

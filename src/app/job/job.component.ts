@@ -13,5 +13,13 @@ export class JobComponent {
     new Job('Insurance Account Assitant', 'Wells Fargo', 'Downtown Seattle', 'Authorize insurance')
   ];
 
+  selectedJob = null;
 
+  editJob(clickedJob) {
+    this.selectedJob = clickedJob;
+  }
+
+  finishedEditing() {
+    this.selectedJob = null;
+  }
 }

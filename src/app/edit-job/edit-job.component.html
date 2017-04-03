@@ -1,0 +1,12 @@
+<div *ngIf="childSelectedJob">
+  <h3>Edit Job</h3>
+  <label>Title:</label>
+  <input [(ngModel)]="childSelectedJob.title">
+  <label>Company:</label>
+  <input [(ngModel)]="childSelectedJob.company">
+  <label>Location:</label>
+  <input [(ngModel)]="childSelectedJob.location">
+  <label>Description:</label>
+  <input [(ngModel)]="childSelectedJob.description">
+  <button (click)="doneButtonClicked()">Done</button>
+</div>

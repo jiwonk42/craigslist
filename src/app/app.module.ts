@@ -7,13 +7,15 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { JobListComponent } from './job-list/job-list.component';
 import { JobComponent } from './job/job.component';
+import { EditJobComponent } from './edit-job/edit-job.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     JobListComponent,
-    JobComponent
+    JobComponent,
+    EditJobComponent
   ],
   imports: [
     BrowserModule,
