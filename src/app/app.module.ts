@@ -15,7 +15,7 @@ import { EditJobComponent } from './edit-job/edit-job.component';
     WelcomeComponent,
     JobListComponent,
     JobComponent,
-    EditJobComponent,
+    EditJobComponent
   ],
   imports: [
     BrowserModule,

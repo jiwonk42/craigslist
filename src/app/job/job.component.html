@@ -1,6 +1,4 @@
 <h1>Jobs</h1>
 
-<li><a routerLink="new-job">Add a job</a></li>
-
 <app-job-list [childJobList]="masterJobList" (clickSender)="editJob($event)"></app-job-list>
 <app-edit-job [childSelectedJob]="selectedJob" (doneButtonClickedSender)="finishedEditing()"></app-edit-job>
