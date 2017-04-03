@@ -2,3 +2,4 @@
 
 <app-job-list [childJobList]="masterJobList" (clickSender)="editJob($event)"></app-job-list>
 <app-edit-job [childSelectedJob]="selectedJob" (doneButtonClickedSender)="finishedEditing()"></app-edit-job>
+<app-new-job (newJobSender)="addJob($event)"></app-new-job>

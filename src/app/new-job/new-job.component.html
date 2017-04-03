@@ -1,4 +1,4 @@
-<!-- <div>
+<div>
   <h3>New Job</h3>
   <label>Title:</label>
   <input #newTitle>
@@ -8,5 +8,5 @@
   <input #newLocation>
   <label>Description:</label>
   <input #newDescription>
-  <button (click)="submitForm(newTitle.value, newCompany.value, newLocation.value, newDescription.value)">Done</button>
-</div> -->
+  <button (click)="submitForm(newTitle.value, newCompany.value, newLocation.value, newDescription.value); newTitle.value=''; newCompany.value=''; newLocation.value=''; newDescription.value='';">Done</button>
+</div>

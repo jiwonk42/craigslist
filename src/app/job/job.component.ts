@@ -22,4 +22,8 @@ export class JobComponent {
   finishedEditing() {
     this.selectedJob = null;
   }
+
+  addJob(newJobFromChild: Job) {
+    this.masterJobList.push(newJobFromChild);
+  }
 }
