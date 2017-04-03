@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Job } from '../job.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-job-list',
@@ -7,6 +8,8 @@ import { Job } from '../job.model';
   styleUrls: ['./job-list.component.css']
 })
 export class JobListComponent {
+
+  constructor(private router: Router){}
 
   @Input() childJobList: Job[];
   @Output() clickSender = new EventEmitter();
@@ -24,4 +27,10 @@ export class JobListComponent {
   editJob(jobToEdit: Job) {
     this.clickSender.emit(jobToEdit);
   }
+
+
+  goToDetailPage(clickedJob: Job) {
+    this.router.navigate(['jobs', clickedJob.id]);
+  };
+
 }

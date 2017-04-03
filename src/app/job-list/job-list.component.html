@@ -1,12 +1,12 @@
 <div class="container row">
   <div class="list-of-jobs col-md-6">
     <ul>
-      <p *ngFor="let currentJob of childJobList" (click)='showJob(currentJob)'>{{currentJob.title}}
+      <p *ngFor="let currentJob of childJobList" (click)="goToDetailPage(currentJob)">{{currentJob.title}}
       <button (click)="editJob(currentJob)">Edit</button></p>
     </ul>
   </div>
 
-  <div class="details-of-job col-md-6">
+  <!-- <div class="details-of-job col-md-6">
     <div *ngIf="showJobDetails">
       <p>Title: {{showJobDetails.title}}</p>
       <p>Company: {{showJobDetails.company}}</p>
@@ -14,5 +14,5 @@
       <p>Details: {{showJobDetails.description}}</p>
        <button (click)="hideJob()">Done</button>
     </div>
-  </div>
+  </div> -->
 </div>

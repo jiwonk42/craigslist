@@ -1,3 +1,3 @@
 export class Job {
-  constructor(public title: string, public company: string, public location: string, public description: string) {}
+  constructor(public title: string, public company: string, public location: string, public description: string, public id: number) {}
 }
