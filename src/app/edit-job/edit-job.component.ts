@@ -9,8 +9,13 @@ import { Job } from '../job.model'
 export class EditJobComponent {
   @Input() childSelectedJob: Job;
   @Output() doneButtonClickedSender = new EventEmitter();
+  @Output() clickSender = new EventEmitter();
 
   doneButtonClicked() {
     this.doneButtonClickedSender.emit();
+  }
+
+  deleteButtonClicked(childSelectedJob: Job) {
+    this.clickSender.emit(childSelectedJob);
   }
 }

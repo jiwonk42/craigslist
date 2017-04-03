@@ -1,5 +1,5 @@
 <h1>Jobs</h1>
 
 <app-job-list [childJobList]="masterJobList" (clickSender)="editJob($event)"></app-job-list>
-<app-edit-job [childSelectedJob]="selectedJob" (doneButtonClickedSender)="finishedEditing()"></app-edit-job>
+<app-edit-job [childSelectedJob]="selectedJob" (doneButtonClickedSender)="finishedEditing()" (clickSender)="deleteJob($event)"></app-edit-job>
 <app-new-job (newJobSender)="addJob($event)"></app-new-job>
